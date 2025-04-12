@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="as">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ৰঙালী বিহুৰ শুভেচ্ছা!</title>
+    <meta name="description" content="Create and share your own Rongali Bihu greeting in Assamese with your name!">
+    <link rel="icon" href="assets/images/gamosa-icon.png" type="image/png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Assamese:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gamosa-curtain">
+        <div class="tap-text animate__animated animate__pulse animate__infinite">টেপ কৰক</div>
+        <div class="tap-icon animate__animated animate__bounce animate__infinite">👆</div>
+    </div>
+    
+    <div class="content">
+        <div class="greeting-container">
+            <div class="greeting-message animate__animated animate__fadeIn">ৰঙালী বিহু আৰু অসমীয়া নৱবৰ্ষৰ হিয়া ভৰা ওলগ ও শুভেচ্ছা যাঁচিলো</div>
+            <div class="sender-name animate__animated animate__fadeIn animate__delay-1s" id="senderName"></div>
+        </div>
+        
+        <div class="name-form animate__animated animate__fadeIn animate__delay-1s">
+            <input type="text" id="nameInput" placeholder="আপোনাৰ নাম লিখক...">
+            <button id="sendGreeting">শুভেচ্ছা প্ৰেৰণ কৰক</button>
+        </div>
+        
+        <div class="social-share animate__animated animate__fadeIn animate__delay-2s">
+            <a href="#" class="share-btn whatsapp" id="whatsappShare"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="share-btn facebook" id="facebookShare"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+    
+    <div class="floating-elements" id="floatingElements"></div>
+    
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/bihu-music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="audio-control animate__animated animate__pulse animate__infinite animate__slower" id="audioControl">🔊</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
